@@ -50,6 +50,7 @@ Marketplace:
 
 Miscellaneous:
 /bikinibot-rockbottom
+/bikinibot-mood
 /bikinibot-quote
 /bikinibot-ping
 /bikinibot-sandyfact
