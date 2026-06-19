@@ -874,7 +874,6 @@ app.command("/bikinibot-help", async ({ ack, respond }) => {
 
 *🎒 Inventory & Stats*
 \`/bikinibot-inventory\` — See your items, balance, level & quest
-\`/bikinibot-whoami\` — Your full profile (level, XP bar, SD)
 \`/bikinibot-leaderboard\` — Top 5 SD earners in Bikini Bottom
 
 *🎯 Quests*
@@ -887,8 +886,6 @@ app.command("/bikinibot-help", async ({ ack, respond }) => {
 
 *✨ Fun*
 \`/bikinibot-quote\` — Bikini Bottom wisdom
-\`/bikinibot-mood\` — Today's Bikini Bottom mood
-\`/bikinibot-imagination\` — IMAGINATION
 \`/bikinibot-rockbottom\` — Motivational quote
 \`/bikinibot-ping\` — Check if the bot is alive`
   );
