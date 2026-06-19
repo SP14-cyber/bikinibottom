@@ -886,6 +886,7 @@ app.command("/bikinibot-help", async ({ ack, respond }) => {
 
 *✨ Fun*
 \`/bikinibot-quote\` — Bikini Bottom wisdom
+\`/bikinibot-mood\` — Today's Bikini Bottom mood
 \`/bikinibot-rockbottom\` — Motivational quote
 \`/bikinibot-ping\` — Check if the bot is alive`
   );
