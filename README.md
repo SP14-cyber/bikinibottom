@@ -49,7 +49,6 @@ Marketplace:
 -> /bikinibot-shop buy [item]
 
 Miscellaneous:
-/bikinibot-imagination
 /bikinibot-rockbottom
 /bikinibot-quote
 /bikinibot-ping
