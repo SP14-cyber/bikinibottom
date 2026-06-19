@@ -41,12 +41,13 @@ Gameplay and economy:
 Profile and progression:
 /bikinibot-inventory
 /bikinibot-quest
+-> /bikinibot-quest submit
 /bikinibot-leaderboard
 /bikinibot-whoami
 
 Marketplace:
 /bikinibot-shop
-/bikinibot-shop buy [item]
+-> /bikinibot-shop buy [item]
 
 Miscellaneous:
 /bikinibot-imagination
