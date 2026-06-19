@@ -1,0 +1,33 @@
+{
+  "users": {
+    "U0B9CPSFTFG": {
+      "inventory": [
+        "Cursed Tuna 🐟",
+        "Krabby Patty 🍔",
+        "Krabby Patty 🍔"
+      ],
+      "balance": 41,
+      "xp": 41,
+      "cooldowns": {
+        "work": 1781879010766,
+        "fish": 1781894417080
+      },
+      "quest": {
+        "id": "sandy_coral",
+        "character": "Sandy 🤠",
+        "description": "Bring me *3 Glowing Coral 🪸* for my treedome experiments!",
+        "target": "Glowing Coral 🪸",
+        "count": 3,
+        "reward": {
+          "sd": 80,
+          "xp": 60,
+          "item": "Sandy's Telescope 🔭"
+        }
+      },
+      "usageCounts": {
+        "mrkrabs": 1,
+        "squidward": 1
+      }
+    }
+  }
+}
