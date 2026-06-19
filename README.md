@@ -23,6 +23,7 @@ A Slack-based Bikini Bottom RPG where you can fish, work, complete quests, and i
 To use BikiniBot, you don’t need to download anything.
 
 Join the Slack workspace where BikiniBot is installed
+
 Type any slash command like:
 /bikinibot-help
 
