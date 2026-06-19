@@ -43,7 +43,6 @@ Profile and progression:
 /bikinibot-quest
 -> /bikinibot-quest submit
 /bikinibot-leaderboard
-/bikinibot-whoami
 
 Marketplace:
 /bikinibot-shop
@@ -53,7 +52,6 @@ Miscellaneous:
 /bikinibot-imagination
 /bikinibot-rockbottom
 /bikinibot-quote
-/bikinibot-mood
 /bikinibot-ping
 /bikinibot-sandyfact
 /bikinibot-squidwardjoke
