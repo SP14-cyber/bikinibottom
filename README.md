@@ -4,7 +4,7 @@ A Slack based Bikini Bottom RPG where you can fish, work, complete quests, and i
 
 Getting started: 
 
-You do not need to download or host anything to play1 Join the Slack workspace where BikiniBot is installed. Run the main help command to see what is available: /bikinibot-help
+You do not need to download or host anything to play. Join the Slack workspace where BikiniBot is installed. Run the main help command to see what is available: /bikinibot-help
 
 The concept:
 
