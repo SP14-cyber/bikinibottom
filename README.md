@@ -18,25 +18,15 @@ A Slack-based Bikini Bottom RPG where you can fish, work, complete quests, and i
 
 ## ⚙️ Setup / Installation
 
-To use BikiniBot in a workspace:
+🎮 How to Use
 
-1. Install the app to your Slack workspace
-   👉 Slack Dashboard → **Install App → Install to Workspace**
+To use BikiniBot, you don’t need to download anything.
 
-2. Ensure the bot is running:
+Join the Slack workspace where BikiniBot is installed
+Type any slash command like:
+/bikinibot-help
 
-```bash
-node index.js
-```
-
-3. Add environment variables:
-
-```env
-SLACK_BOT_TOKEN=your-bot-token
-SLACK_APP_TOKEN=your-app-token
-```
-
-Once installed, the bot runs inside Slack via slash commands.
+That’s it.
 
 ---
 
