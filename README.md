@@ -1,171 +1,76 @@
-# bikinibottom
+BikiniBot
 
-# 🧽 BikiniBot
+A Slack based Bikini Bottom RPG where you can fish, work, complete quests, and interact with SpongeBob characters through a text economy
 
-A Slack-based Bikini Bottom RPG where you can fish, work, complete quests, and interact with SpongeBob characters through a fully playable economy system.
+Getting started: 
 
----
+You do not need to download or host anything to play1 Join the Slack workspace where BikiniBot is installed. Run the main help command to see what is available: /bikinibot-help
 
-## 🎮 Demo
+The concept:
 
-👉 After installing the Slack app, use commands directly inside Slack:
+BikiniBot turns your Slack workspace into a text RPG Instead of just replying with static quotes, the bot tracks your progress, inventory, and currency directly within your chat channels.
 
-```bash
-/bikinibot-help
-```
+You can fish and hunt for loot using randomized rarity mechanics, take on jobs to earn Sand Dollars and build up your bank account, track quest objectives to unlock rewards and gain XP, compete with friends to climb the leaderboard
 
----
+Core features include interactive NPC system for SpongeBob, Patrick, Squidward, Mr Krabs, Sandy, Plankton, Gary, and Bubble Bass, fishing and jellyfish catching minigames with randomized drop rates, active job system and dynamic quest logsShop system to buy upgrades, tools, and mystery boxes, persistent inventory tracking and user leveling with custom titlesRandom events and character responses triggered by workspace activity
 
-## ⚙️ Setup / Installation
+The coding:
 
-🎮 How to Use
+BikiniBot runs on Node.js using the Slack Bolt framework over Socket ModeUnlike massive cloud apps, this project uses a lightweight JSON file (data json) to handle game state. Slash commands modify user data structures locally, drop tables utilize randomized weight distributions for loot and fishing, and character dialogue relies on keyword matching triggers combined with dynamic arrays to keep interactions fresh. 
 
-To use BikiniBot, you don’t need to download anything.
+Available slash commands: 
 
-Join the Slack workspace where BikiniBot is installed
+NPC Interactions: 
+/bikinibot-spongebob
+/bikinibot-patrick/
+bikinibot-squidward
+/bikinibot-mrkrabs
+/bikinibot-sandy
+/bikinibot-plankton
+/bikinibot-bubblebass
+/bikinibot-gary
 
-Type any slash command like:
-/bikinibot-help
+Gameplay & Economy
+/bikinibot-fish
+/bikinibot-jellyfish
+/bikinibot-work
+/bikinibot-krabby
+/bikinibot-order
+/bikinibot-menu
 
-That’s it.
+Profile & Progression
+/bikinibot-inventory
+/bikinibot-quest
+/bikinibot-leaderboard
+/bikinibot-whoami
 
----
+Marketplace
+/bikinibot-shop
+/bikinibot-shop buy [item]
 
-## ✨ What it is
+Miscellaneous
+/bikinibot-imagination
+/bikinibot-rockbottom
+/bikinibot-quote
+/bikinibot-mood
+/bikinibot-ping
+/bikinibot-sandyfact
+/bikinibot-squidwardjoke
 
-BikiniBot turns Slack into a **playable SpongeBob-themed RPG**, where every message becomes part of a game world.
+Local development:
+If you want to clone this repository and host your own instance of the bot, follow these steps
 
-You can:
+Install the dependencies: npm install
+Create a .env file in the root directory and add your Slack credentials:
+SLACK_BOT_TOKEN=xoxb-your-token
+SLACK_APP_TOKEN=xapp-your-app-token
+Start the application: node index js 
 
-* fish for loot 🐟
-* earn sand dollars 💰
-* complete quests 🎯
-* level up with XP 📈
-* collect rare items 🎒
-* interact with Bikini Bottom characters 🎭
+Why did I build this?
+Most Slack bots are productivity tools or simple single response joke commands BikiniBot was built to see how far the Slack interface could be pushed into an actual game loop By combining persistent state with interactive commands, it transforms a standard chat app into a passive, engaging MMO environment that communities can play together throughout the workday
 
----
+Credits
+Inspired by Nickolodeon's TV Show SpongeBob SquarePants
+Built using the Slack Bolt Framework
+External data sourced via the Useless Facts API and Official Joke API
 
-## 🚀 Features
-
-* 🎭 Fully interactive SpongeBob character system (SpongeBob, Patrick, Squidward, Mr. Krabs, Sandy, Plankton, Gary, Bubble Bass)
-* 🎣 Fishing system with rarity-based loot drops
-* 🪼 Jellyfish catching minigame with rewards
-* 💼 Random job system to earn currency
-* 🧭 Quest system with item-based objectives and rewards
-* 🛒 Shop with upgrades, tools, and mystery boxes
-* 🎒 Persistent inventory system (stored per user)
-* 📈 XP + leveling system with titles and progression
-* 🏆 Leaderboard tracking richest players
-* 🎲 Random events and personality-based responses
-
----
-
-## 🧠 How it works
-
-BikiniBot is built using:
-
-* Node.js
-* Slack Bolt (Socket Mode)
-* JSON-based persistent storage
-
-Each slash command triggers a game mechanic or character AI response:
-
-* Economy commands modify stored user data (balance, inventory, XP)
-* Fishing/jellyfish systems use randomized rarity rolls
-* Quests dynamically assign objectives and track progress
-* Characters respond using randomized dialogue pools + keyword triggers
-* Items affect gameplay (better loot, higher rewards, bonuses)
-
-All user data is stored in a local `data.json` file.
-
----
-
-## 🎮 Commands
-
-### 👥 Characters
-
-* `/bikinibot-spongebob`
-* `/bikinibot-patrick`
-* `/bikinibot-squidward`
-* `/bikinibot-mrkrabs`
-* `/bikinibot-sandy`
-* `/bikinibot-plankton`
-* `/bikinibot-bubblebass`
-* `/bikinibot-gary`
-
-### 🎣 Economy & Gameplay
-
-* `/bikinibot-fish`
-* `/bikinibot-jellyfish`
-* `/bikinibot-work`
-* `/bikinibot-krabby`
-* `/bikinibot-order`
-* `/bikinibot-menu`
-
-### 🎒 Progression
-
-* `/bikinibot-inventory`
-* `/bikinibot-quest`
-* `/bikinibot-leaderboard`
-* `/bikinibot-whoami`
-
-### 🛒 Shop
-
-* `/bikinibot-shop`
-* `/bikinibot-shop buy <item>`
-
-### 🎲 Fun
-
-* `/bikinibot-imagination`
-* `/bikinibot-rockbottom`
-* `/bikinibot-quote`
-* `/bikinibot-mood`
-* `/bikinibot-ping`
-
-### 🌐 API Features
-
-* `/bikinibot-sandyfact`
-* `/bikinibot-squidwardjoke`
-
----
-
-## 🧪 Local Development
-
-```bash
-npm install
-node index.js
-```
-
-### Environment variables
-
-```env
-SLACK_BOT_TOKEN=your-token
-SLACK_APP_TOKEN=your-app-token
-```
-
----
-
-## 🧩 Design Philosophy
-
-BikiniBot is designed as a **Slack-native game world**, not just a chatbot.
-
-Core ideas:
-
-* Every command is a game action, not just a response
-* Progression systems (XP, inventory, quests) create long-term engagement
-* Randomized character dialogue keeps interactions unpredictable
-* Economy systems give players reasons to return and grind
-
-The goal is to make Slack feel like a **playable RPG environment**.
-
----
-
-## 🙌 Credits
-
-* Inspired by *SpongeBob SquarePants*
-* Built with Slack Bolt
-* APIs: Useless Facts API, Official Joke API
-* All game systems, dialogue, and mechanics designed for BikiniBot
-
----
